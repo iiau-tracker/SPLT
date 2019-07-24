@@ -11,8 +11,8 @@ This code has been tested on
 git clone https://github.com/iiau-tracker/SPLT.git
 cd <path/to/SPLT>
 
-conda create -n SPT_LT python=3.6
-conda activate SPT_LT
+conda create -n SPLT python=3.6
+conda activate SPLT
 pip install -r requirements.txt
 ```
 
