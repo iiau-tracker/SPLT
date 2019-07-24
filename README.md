@@ -11,7 +11,7 @@ This code has been tested on
 git clone https://github.com/iiau-tracker/SPLT.git
 cd <path/to/SPLT>
 
-conda create -n SPLT python=3.6
+conda create -n SPLT python=2.7
 conda activate SPLT
 pip install -r requirements.txt
 ```
@@ -33,7 +33,7 @@ conda install cudnn=7.1.2
 
 - extract `model.ckpt-470277` to `./RPN`
 - extract `V_resnet50_VID_N-65624` to `./Verifier`
-- extract `model.ckpt-470277` to `./Skim`
+- extract `Skim` to `./Skim`
 
 # Demo
 ```
