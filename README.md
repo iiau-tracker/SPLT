@@ -2,24 +2,30 @@
 
 This code has been tested on 
 - RTX 2080Ti
-- CUDA 10.0 + cudnn 7.6 / CUDA 9.0 + cudnn 7.1.2
+- CUDA 10.0 + cuDNN 7.6 / CUDA 9.0 + cuDNN 7.1.2
 - Python 2.7
 - Ubuntu 18.04.2 LTS
 
 # Installation
+- Create anaconda environment:
+```bash
+conda create -n SPLT python=2.7
+conda activate SPLT
+```
+
+- Clone the repo and install requirements:
 ```bash
 git clone https://github.com/iiau-tracker/SPLT.git
 cd <path/to/SPLT>
-
-conda create -n SPLT python=2.7
-conda activate SPLT
 pip install -r requirements.txt
 ```
 
+- CUDA and cuDNN:
 ```bash
 conda install cudatoolkit=10.0
 conda install cudnn=7.6.0
-or
+
+# or CUDA 9.0 + cuDNN 7.1.2 for TensorFlow  < 1.13.0
 conda install cudatoolkit=9.0
 conda install cudnn=7.1.2
 ```
