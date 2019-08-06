@@ -1,6 +1,6 @@
 # `Skimming-Perusal' Tracking: A Framework for Real-Time and Robust Long-term Tracking
 
-！[splt](https://github.com/iiau-tracker/SPLT/tree/master/results/SPLT.png)
+![splt](https://github.com/iiau-tracker/SPLT/tree/master/results/SPLT.png)
 
 This code has been tested on 
 - RTX 2080Ti
