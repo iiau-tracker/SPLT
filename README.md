@@ -31,24 +31,27 @@ conda install cudnn=7.1.2
 ```
 
 # Models
-| Model | Size | Google Drive  | Baidu Yun |
+| Model | Size | Google Drive  | Baidu |
 |:-----:|:----:|:-------------:|:---------:|
-| SiamRPN | 215 MB | [model.ckpt-470277](https://drive.google.com/open?id=1t-rJSHWGgm_9VfqzZaLfhN5XZ8dotXSb)  | [Mirror]() |
-| Verifier | 178 MB | [V_resnet50_VID_N-65624](https://drive.google.com/open?id=1jsGkEUinQwvotwWJzsMzXNaHOYkJrPeh)  | [Mirror]() |
-| Skimming | 24 MB | [Skim](https://drive.google.com/open?id=10kqcAPw19fBLnoW4O0qQMUOAm7YgpWsg)  | [Mirror]() |
+| SiamRPN | 215 MB | [model.ckpt-470277](https://drive.google.com/open?id=1t-rJSHWGgm_9VfqzZaLfhN5XZ8dotXSb)  | [Mirror](https://pan.baidu.com/s/1Ft-OorgWQIh7rvWvdGodUA) |
+| Verifier | 178 MB | [V_resnet50_VID_N-65624](https://drive.google.com/open?id=1jsGkEUinQwvotwWJzsMzXNaHOYkJrPeh)  | [Mirror](https://pan.baidu.com/s/1gHAaFAwgX5ROfaucaaGafQ) |
+| Skimming | 24 MB | [Skim](https://drive.google.com/open?id=10kqcAPw19fBLnoW4O0qQMUOAm7YgpWsg)  | [Mirror](https://pan.baidu.com/s/1XRAbBfiQ32Ey52LYTJzErw) |
 
 - extract `model.ckpt-470277` to `./RPN`
 - extract `V_resnet50_VID_N-65624` to `./Verifier`
 - extract `Skim` to `./Skim`
 
 # Demo
-```
+```bash
 # modify 'PROJECT_PATH' in 'demo.py' 
 python demo.py
 ```
 
-# Evaluation
-...
+# Evaluation on VOT
+[raw resluts (vot-toolkt version 6.0.3)](https://github.com/iiau-tracker/SPLT/tree/master/results), 
+- modify 'PROJECT_PATH' in 'RPN_Verifier_Skim_top3.py'
+- add `set_global_variable('python', 'env -i <path/to/anaconda/envs/SPLT/bin/python>');` to `configuration.m`
+
 # Training
 ...
 
