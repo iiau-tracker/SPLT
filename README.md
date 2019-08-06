@@ -48,12 +48,12 @@ python demo.py
 ```
 
 # Evaluation on VOT
-start from 'RPN_Verifier_Skim_top3.py'
+start from `RPN_Verifier_Skim_top3.py`
 
-- modify 'PROJECT_PATH' in 'RPN_Verifier_Skim_top3.py'
+- modify `PROJECT_PATH` in `RPN_Verifier_Skim_top3.py`
 - add `set_global_variable('python', 'env -i <path/to/anaconda/envs/SPLT/bin/python>');` to `configuration.m`
 
-[raw resluts (vot-toolkt version 6.0.3)](https://github.com/iiau-tracker/SPLT/tree/master/results), 
+[raw resluts (vot-toolkt version 6.0.3)](https://github.com/iiau-tracker/SPLT/tree/master/results)
 
 # Training
 ...
