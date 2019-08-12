@@ -58,18 +58,7 @@ start from `RPN_Verifier_Skim_top3.py`
 [raw resluts (vot-toolkt version 6.0.3)](https://github.com/iiau-tracker/SPLT/tree/master/results)
 
 # Training
-- Verifier
-Download [ResNet50](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz) model pretrained on IMAGENET.Then put extracted ckpt file in train_Verifier/lib
-```
-cd train_Verifier/experiments
-# modify paths in classify.py
-python classify.py
-# modify paths in triplet_pairs.py
-python triplet_pairs.py
-# modify paths in train_multi_gpu.py
-python train_multi_gpu.py
-```
-
+...
 
 # Citation
 If you use SPLT or this code base in your work, please cite
