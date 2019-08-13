@@ -37,7 +37,7 @@ conda install cudnn=7.1.2
 |:-----:|:----:|:-------------:|:---------:|
 | SiamRPN | 215 MB | [model.ckpt-470277](https://drive.google.com/open?id=1t-rJSHWGgm_9VfqzZaLfhN5XZ8dotXSb)  | [Mirror](https://pan.baidu.com/s/1Ft-OorgWQIh7rvWvdGodUA) |
 | Verifier | 178 MB | [V_resnet50_VID_N-65624](https://drive.google.com/open?id=1jsGkEUinQwvotwWJzsMzXNaHOYkJrPeh)  | [Mirror](https://pan.baidu.com/s/1gHAaFAwgX5ROfaucaaGafQ) |
-| Skimming | 24 MB | [Skim](https://drive.google.com/open?id=10kqcAPw19fBLnoW4O0qQMUOAm7YgpWsg)  | [Mirror](https://pan.baidu.com/s/1XRAbBfiQ32Ey52LYTJzErw) |
+| Skimming | 24 MB | [Skim](https://drive.google.com/open?id=1b_Lo3tMtefFsQc7Er1VLqg_RDuig86w2)  | [Mirror](https://pan.baidu.com/s/15MxiizQAydPu0K9Nr9GPsg) |
 
 - extract `model.ckpt-470277` to `./RPN`
 - extract `V_resnet50_VID_N-65624` to `./Verifier`
@@ -59,7 +59,7 @@ start from `RPN_Verifier_Skim_top3.py`
 
 # Train the Verifier(optional)
 Download [ResNet50](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz) model pretrained on IMAGENET.Then put extracted ckpt file in train_Verifier/lib
-```
+```bash
 cd train_Verifier/experiments
 # modify paths in classify.py
 python classify.py
@@ -68,6 +68,19 @@ python triplet_pairs.py
 # modify paths in train_multi_gpu.py
 python train_multi_gpu.py
 ```
+
+# Train the Skimming(optional)
+```bash
+cd train_Skim
+# modify paths in classify.py
+python classify.py
+# modify paths in skim_data.py
+python skim_data.py
+# modify paths in train_skim.py
+python train_skim.py
+
+```
+
 
 # Citation
 If you use SPLT or this code base in your work, please cite

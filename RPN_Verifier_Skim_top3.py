@@ -239,7 +239,7 @@ class MobileTracker(object):
         z_im = z_im[None, :, :, :].astype(np.float32)
         self.z_feat = self.branch_z.predict(z_im)
         # warm
-        self.branch_search.predict([self.z_feat.repeat(1, axis=0), np.random.rand(1,256,256,3)])[:,1]
+        self.branch_search.predict([self.z_feat.repeat(1, axis=0), np.random.rand(1,256,256,3)])
 
 
         self.V_thres = V_T 
@@ -576,7 +576,7 @@ class MobileTracker(object):
 
             if softmax_test.shape[0] <= batch_sz:
                 kk = softmax_test
-                cls_out = self.branch_search.predict([self.z_feat.repeat(kk.shape[0], axis=0), kk])[:,1]
+                cls_out = self.branch_search.predict([self.z_feat.repeat(kk.shape[0], axis=0), kk]).reshape(-1)
 
 
             elif softmax_test.shape[0] > batch_sz:
@@ -586,14 +586,14 @@ class MobileTracker(object):
                 for jj in range(for_i):
                     kk = softmax_test[batch_sz * jj:batch_sz * (jj + 1)]
                     cls_out_list.append(
-                        self.branch_search.predict([self.z_feat.repeat(kk.shape[0], axis=0), kk])[:,1] )
+                        self.branch_search.predict([self.z_feat.repeat(kk.shape[0], axis=0), kk]).reshape(-1) )
 
                 if softmax_test.shape[0] % batch_sz == 0:
                     pass
                 else:
                     kk = softmax_test[batch_sz * (jj + 1):]
                     cls_out_list.append(
-                        self.branch_search.predict([self.z_feat.repeat(kk.shape[0], axis=0), kk])[:,1] )
+                        self.branch_search.predict([self.z_feat.repeat(kk.shape[0], axis=0), kk]).reshape(-1) )
 
                 cls_out = np.concatenate(cls_out_list)
 
