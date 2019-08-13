@@ -57,7 +57,8 @@ start from `RPN_Verifier_Skim_top3.py`
 
 [raw resluts (vot-toolkt version 6.0.3)](https://github.com/iiau-tracker/SPLT/tree/master/results)
 
-# Train the Verifier(optional)
+# Train
+## Train the Verifier(optional)
 Download [ResNet50](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz) model pretrained on IMAGENET.Then put extracted ckpt file in train_Verifier/lib
 ```bash
 cd train_Verifier/experiments
@@ -69,7 +70,7 @@ python triplet_pairs.py
 python train_multi_gpu.py
 ```
 
-# Train the Skimming(optional)
+## Train the Skimming(optional)
 ```bash
 cd train_Skim
 # modify paths in classify.py
