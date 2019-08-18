@@ -1,5 +1,4 @@
-# `Skimming-Perusal' Tracking
-**A Framework for Real-Time and Robust Long-term Tracking**
+# `Skimming-Perusal' Tracking: A Framework for Real-Time and Robust Long-term Tracking
 
 ![splt](https://github.com/iiau-tracker/SPLT/blob/master/results/SPLT.png)
 
