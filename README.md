@@ -1,14 +1,27 @@
-# `Skimming-Perusal' Tracking: A Framework for Real-Time and Robust Long-term Tracking
+# `Skimming-Perusal' Tracking
+**A Framework for Real-Time and Robust Long-term Tracking**
 
 ![splt](https://github.com/iiau-tracker/SPLT/blob/master/results/SPLT.png)
 
-This code has been tested on 
+
+This is the official code for the ICCV 2019 paper[[Google]](https://drive.google.com/open?id=1fhWVhgjNzm9zumX_hz2-PbpJR22v5cTI)[[Baidu(oj49)]](https://pan.baidu.com/s/1HcqMHH0SBYz2wEk-mwpuaQ). This code has been tested on 
 - RTX 2080Ti
 - CUDA 10.0 + cuDNN 7.6 / CUDA 9.0 + cuDNN 7.1.2
 - Python 2.7
 - Ubuntu 18.04.2 LTS
 
+Please cite our paper if you find it useful for your research.
+```
+@inproceedings{ iccv19_SPLT,
+    title={`Skimming-Perusal' Tracking: A Framework for Real-Time and Robust Long-term Tracking},
+    author={Yan, Bin and Zhao, Haojie and Wang, Dong and Lu, Huchuan and Yang, Xiaoyun},
+    booktitle={IEEE International Conference on Computer Vision (ICCV)},
+    year={2019}
+}
+```
+
 # Installation
+
 - Create anaconda environment:
 ```bash
 conda create -n SPLT python=2.7
@@ -80,16 +93,4 @@ python skim_data.py
 # modify paths in train_skim.py
 python train_skim.py
 
-```
-
-
-# Citation
-If you use SPLT or this code base in your work, please cite
-```
-@inproceedings{ iccv19_SPLT,
-    title={`Skimming-Perusal' Tracking: A Framework for Real-Time and Robust Long-term Tracking},
-    author={Yan, Bin and Zhao, Haojie and Wang, Dong and Lu, Huchuan and Yang, Xiaoyun},
-    booktitle={IEEE International Conference on Computer Vision (ICCV)},
-    year={2019}
-}
 ```
