@@ -11,6 +11,7 @@ This is the py36 version code for the ICCV 2019 paper[[arxiv]](https://arxiv.org
 
 The F-score on VOT18-LT35 of this code is 0.610, which is slightly lower than that of origin branch(0.616). However, performance on a few
 videos is actually better than original version. So feel free to try this code :) 
+
 Please cite our paper if you find it useful for your research.
 ```
 @inproceedings{ iccv19_SPLT,
@@ -26,7 +27,7 @@ Please cite our paper if you find it useful for your research.
 - Create anaconda environment:
 ```bash
 conda create -n SPLT python=3.6
-conda activate SPLT
+conda activate SPLT36
 ```
 
 - Clone the repo and install requirements:
