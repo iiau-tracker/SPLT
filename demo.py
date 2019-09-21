@@ -2,7 +2,7 @@
 import os
 import sys
 
-PROJECT_PATH = '/home/space/Documents/github/SPLT/'
+PROJECT_PATH = '/home/masterbin-iiau/SPLT/'
 sys.path.append(PROJECT_PATH + 'lib')
 sys.path.append(PROJECT_PATH + 'lib/slim')
 image_root = './video/'
@@ -833,10 +833,10 @@ for title_id in range(1):
     lengths[title_id], precisions[title_id], precisions_auc[title_id], ious[title_id] = compile_results(
         gt.astype(np.float32), box_pred.astype(np.float32), 20)
 
-    print (num_frames - 1) * 1.0 / speed
-    print '{:0>2d} {:12s} -- Precision: {:6.2f} -- Precisions AUC: {:6.2f} -- IOU: {:6.2f}'.format(
+    print ((num_frames - 1) * 1.0 / speed, ' FPS')
+    print ('{:0>2d} {:12s} -- Precision: {:6.2f} -- Precisions AUC: {:6.2f} -- IOU: {:6.2f}'.format(
         title_id,
         titles[title_id],
         precisions[title_id],
         precisions_auc[title_id],
-        ious[title_id])
+        ious[title_id]))

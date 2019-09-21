@@ -6,9 +6,11 @@ from xml.etree import ElementTree as ET
 from PIL import Image
 import h5py
 
-'''generate triplet pairs and save in tfrecord for trainning :)'''
-file_dir = './train_Skim/type_video'
-VID_ROOT_DIR = '/data1/Dataset/ILSVRC2015'
+'''path that should satisfy your machine'''
+file_dir = '/home/masterbin-iiau/SPLT/train_Skim/type_video'
+VID_ROOT_DIR = '/media/masterbin-iiau/WIN_SSD/ILSVRC2015'
+save = '/home/masterbin-iiau/SPLT/Siam/Skim_data.h5'
+
 
 type_names = ['airplane','antelope','bear','bicycle','bird',
               'bus','car','cattle','dog','domestic_cat',
@@ -174,7 +176,7 @@ def get_two_samples(type):
 
 num = 0
 summ = 4000
-save = './Siam/Skim_data.h5'
+
 
 fdata = h5py.File(save, 'w')
 fdata.create_dataset('template',(summ,140, 140, 3), dtype='float32')
@@ -190,5 +192,5 @@ while num < summ:
         fdata['label'][num] = label
 
         num += 1
-        print num, label, type
+        print (num, label, type)
 fdata.close()

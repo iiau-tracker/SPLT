@@ -11,4 +11,5 @@ set_global_variable('version', 6);
 
 % Select experiment stack
 set_global_variable('stack', 'votlt2018');
-set_global_variable('python', 'env -i /home/space/Public/anaconda3/envs/iccv2019/bin/python');
+% set_global_variable('python', 'env -i /home/space/Public/anaconda3/envs/iccv2019/bin/python');
+set_global_variable('python', 'env -i /home/masterbin-iiau/anaconda3/envs/SPLT36/bin/python');

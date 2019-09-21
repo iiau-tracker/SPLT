@@ -38,7 +38,7 @@ output = branch_search([branch_z(inputs_1), inputs_2])
 model = tf.keras.Model(inputs=[inputs_1, inputs_2], outputs=output)
 
 
-fdata = h5py.File('./train_Skim/Skim_data.h5','r')
+fdata = h5py.File('/home/masterbin-iiau/SPLT/Siam/Skim_data.h5','r')
 search = fdata['search']
 template = fdata['template']
 labels = fdata['label']

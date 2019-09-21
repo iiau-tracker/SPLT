@@ -1,7 +1,7 @@
 import os
 import sys
 
-PROJECT_PATH = '/home/space/Documents/github/SPLT/'
+PROJECT_PATH = '/home/masterbin-iiau/SPLT/'
 sys.path.append(PROJECT_PATH + 'lib')
 sys.path.append(PROJECT_PATH + 'lib/slim')
 

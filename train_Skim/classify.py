@@ -4,9 +4,10 @@ import os
 
 '''Split VID dataset into 30 folders according to class label of the target.'''
 # the following paths should be changed to your real path
-VID_root = '/data1/Dataset/ILSVRC2015'
-save_dir = './train_Skim/type_video'
-
+VID_root = '/media/masterbin-iiau/WIN_SSD/ILSVRC2015'
+save_dir = '/home/masterbin-iiau/SPLT/train_Skim/type_video'
+if not os.path.exists(save_dir):
+    os.mkdir(save_dir)
 if __name__ == '__main__':
     VID_anno_root = os.path.join(VID_root, 'Annotations/VID/train')
     folders = ['a','b','c','d','e']
