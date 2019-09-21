@@ -2,8 +2,10 @@
 
 ![splt](https://github.com/iiau-tracker/SPLT/blob/master/results/SPLT.png)
 
+GOOD NEWS ! ! !
+Our code has supported python3.6. Welcome to try(checkout to py36 branch) if you want to run our tracker with python3.6.
 
-This is the official code for the ICCV 2019 paper[[Google]](https://drive.google.com/open?id=1fhWVhgjNzm9zumX_hz2-PbpJR22v5cTI)[[Baidu(oj49)]](https://pan.baidu.com/s/1HcqMHH0SBYz2wEk-mwpuaQ). This code has been tested on 
+This is the official code for the ICCV 2019 paper[[arxiv]](https://arxiv.org/abs/1909.01840). This code has been tested on 
 - RTX 2080Ti
 - CUDA 10.0 + cuDNN 7.6 / CUDA 9.0 + cuDNN 7.1.2
 - Python 2.7
