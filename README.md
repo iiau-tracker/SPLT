@@ -26,7 +26,7 @@ Please cite our paper if you find it useful for your research.
 
 - Create anaconda environment:
 ```bash
-conda create -n SPLT python=3.6
+conda create -n SPLT36 python=3.6
 conda activate SPLT36
 ```
 
