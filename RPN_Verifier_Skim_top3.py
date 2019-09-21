@@ -109,10 +109,10 @@ class MobileTracker(object):
             'relu6': tf.keras.layers.LeakyReLU(0),
             'DepthwiseConv2D': tf.keras.layers.DepthwiseConv2D}):
             self.branch_z = tf.keras.models.load_model(
-                PROJECT_PATH + 'Skim/branch_z.h5',
+                PROJECT_PATH + 'Skim/branch_z_3.h5',
                 custom_objects={"tf": tf})
             self.branch_search = tf.keras.models.load_model(
-                PROJECT_PATH + 'Skim/branch_search.h5',
+                PROJECT_PATH + 'Skim/branch_search_3.h5',
                 custom_objects={"tf": tf})
 
     def init_first(self, image, region):

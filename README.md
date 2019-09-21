@@ -3,12 +3,14 @@
 ![splt](https://github.com/iiau-tracker/SPLT/blob/master/results/SPLT.png)
 
 
-This is the official code for the ICCV 2019 paper[[Google]](https://drive.google.com/open?id=1fhWVhgjNzm9zumX_hz2-PbpJR22v5cTI)[[Baidu(oj49)]](https://pan.baidu.com/s/1HcqMHH0SBYz2wEk-mwpuaQ). This code has been tested on 
+This is the py36 version code for the ICCV 2019 paper[[arxiv]](https://arxiv.org/abs/1909.01840). This code has been tested on 
 - RTX 2080Ti
 - CUDA 10.0 + cuDNN 7.6 / CUDA 9.0 + cuDNN 7.1.2
-- Python 2.7
+- Python 3.6
 - Ubuntu 18.04.2 LTS
 
+The F-score on VOT18-LT35 of this code is 0.610, which is slightly lower than that of origin branch(0.616). However, performance on a few
+videos is actually better than original version. So feel free to try this code :) 
 Please cite our paper if you find it useful for your research.
 ```
 @inproceedings{ iccv19_SPLT,
@@ -23,13 +25,14 @@ Please cite our paper if you find it useful for your research.
 
 - Create anaconda environment:
 ```bash
-conda create -n SPLT python=2.7
+conda create -n SPLT python=3.6
 conda activate SPLT
 ```
 
 - Clone the repo and install requirements:
 ```bash
 git clone https://github.com/iiau-tracker/SPLT.git
+git checkout py36
 cd <path/to/SPLT>
 pip install -r requirements.txt
 ```
@@ -49,11 +52,9 @@ conda install cudnn=7.1.2
 |:-----:|:----:|:-------------:|:---------:|
 | SiamRPN | 215 MB | [model.ckpt-470277](https://drive.google.com/open?id=1t-rJSHWGgm_9VfqzZaLfhN5XZ8dotXSb)  | [Mirror](https://pan.baidu.com/s/1Ft-OorgWQIh7rvWvdGodUA) |
 | Verifier | 178 MB | [V_resnet50_VID_N-65624](https://drive.google.com/open?id=1jsGkEUinQwvotwWJzsMzXNaHOYkJrPeh)  | [Mirror](https://pan.baidu.com/s/1gHAaFAwgX5ROfaucaaGafQ) |
-| Skimming | 24 MB | [Skim](https://drive.google.com/open?id=1b_Lo3tMtefFsQc7Er1VLqg_RDuig86w2)  | [Mirror](https://pan.baidu.com/s/15MxiizQAydPu0K9Nr9GPsg) |
 
 - extract `model.ckpt-470277` to `./RPN`
 - extract `V_resnet50_VID_N-65624` to `./Verifier`
-- extract `Skim` to `./Skim`
 
 # Demo
 ```bash
@@ -82,14 +83,3 @@ python triplet_pairs.py
 python train_multi_gpu.py
 ```
 
-## Train the Skimming(optional)
-```bash
-cd train_Skim
-# modify paths in classify.py
-python classify.py
-# modify paths in skim_data.py
-python skim_data.py
-# modify paths in train_skim.py
-python train_skim.py
-
-```
