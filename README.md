@@ -3,7 +3,7 @@
 ![splt](https://github.com/iiau-tracker/SPLT/blob/master/results/SPLT.png)
 
 
-This is the py36 version code for the ICCV 2019 paper[[arxiv]](https://arxiv.org/abs/1909.01840). This code has been tested on 
+This is the **py36** version code for the ICCV 2019 paper[[arxiv]](https://arxiv.org/abs/1909.01840). This code has been tested on 
 - RTX 2080Ti
 - CUDA 10.0 + cuDNN 7.6 / CUDA 9.0 + cuDNN 7.1.2
 - Python 3.6
@@ -22,7 +22,7 @@ Please cite our paper if you find it useful for your research.
 }
 ```
 
-# Installation
+## Installation
 
 - Create anaconda environment:
 ```bash
@@ -48,7 +48,7 @@ conda install cudatoolkit=9.0
 conda install cudnn=7.1.2
 ```
 
-# Models
+## Models
 | Model | Size | Google Drive  | Baidu |
 |:-----:|:----:|:-------------:|:---------:|
 | SiamRPN | 215 MB | [model.ckpt-470277](https://drive.google.com/open?id=1t-rJSHWGgm_9VfqzZaLfhN5XZ8dotXSb)  | [Mirror](https://pan.baidu.com/s/1Ft-OorgWQIh7rvWvdGodUA) |
@@ -57,13 +57,13 @@ conda install cudnn=7.1.2
 - extract `model.ckpt-470277` to `./RPN`
 - extract `V_resnet50_VID_N-65624` to `./Verifier`
 
-# Demo
+## Demo
 ```bash
 # modify 'PROJECT_PATH' in 'demo.py' 
 python demo.py
 ```
 
-# Evaluation on VOT
+## Evaluation on VOT
 start from `RPN_Verifier_Skim_top3.py`
 
 - modify `PROJECT_PATH` in `RPN_Verifier_Skim_top3.py`
@@ -71,8 +71,8 @@ start from `RPN_Verifier_Skim_top3.py`
 
 [raw resluts (vot-toolkt version 6.0.3)](https://github.com/iiau-tracker/SPLT/tree/master/results)
 
-# Train
-## Train the Verifier(optional)
+## Train
+### Train the Verifier(optional)
 Download [ResNet50](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz) model pretrained on IMAGENET.Then put extracted ckpt file in train_Verifier/lib
 ```bash
 cd train_Verifier/experiments
