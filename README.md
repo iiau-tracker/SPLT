@@ -12,6 +12,9 @@ This is the **python 3.6** version code for the ICCV 2019 paper SPLT[[arxiv]](ht
 The F-score on VOT18-LT35 of this code is 0.610, which is slightly lower than that of origin branch(0.616). However, performance on a few
 videos is actually better than original version. So feel free to try this code :) 
 
+The **raw experimental results** on **VOT2019LT** and **LaSOT** benchmarks can be found in [Google Drive](https://drive.google.com/drive/folders/1ZsavuH8LwUD4zG-Y7WEfpEmDadNX__mt)
+ or [Baidu Drive](https://pan.baidu.com/s/1PUkqNmVwczQAvrw8ZqiQOg) (extraction code: gc9g).
+
 Please cite our paper if you find it useful for your research.
 ```
 @inproceedings{ iccv19_SPLT,
