@@ -3,7 +3,7 @@
 ![splt](https://github.com/iiau-tracker/SPLT/blob/master/results/SPLT.png)
 
 
-This is the **py36** version code for the ICCV 2019 paper[[arxiv]](https://arxiv.org/abs/1909.01840). This code has been tested on 
+This is the **python 3.6** version code for the ICCV 2019 paper SPLT[[arxiv]](https://arxiv.org/abs/1909.01840). This code has been tested on 
 - RTX 2080Ti
 - CUDA 10.0 + cuDNN 7.6 / CUDA 9.0 + cuDNN 7.1.2
 - Python 3.6
@@ -33,8 +33,8 @@ conda activate SPLT36
 - Clone the repo and install requirements:
 ```bash
 git clone https://github.com/iiau-tracker/SPLT.git
-git checkout py36
 cd <path/to/SPLT>
+git checkout py36
 pip install -r requirements.txt
 ```
 
