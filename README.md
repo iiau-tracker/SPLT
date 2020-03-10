@@ -47,7 +47,13 @@ conda install cudnn=7.6.0
 conda install cudatoolkit=9.0
 conda install cudnn=7.1.2
 ```
-
+- Add object_detection to environment variable
+```
+sudo gedit ~/.bashrc
+# go to the end of the file, add the following command.
+export PYTHONPATH=<SPLT_PATH>/lib/object_detection:$PYTHONPATH
+# Replace <SPLT_PATH> with your real path
+```
 ## Models
 | Model | Size | Google Drive  | Baidu |
 |:-----:|:----:|:-------------:|:---------:|
