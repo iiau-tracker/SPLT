@@ -40,7 +40,6 @@ conda activate SPLT36
 ```bash
 git clone https://github.com/iiau-tracker/SPLT.git
 cd <path/to/SPLT>
-git checkout py36
 pip install -r requirements.txt
 ```
 
