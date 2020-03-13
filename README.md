@@ -14,6 +14,8 @@ videos is actually better than original version. So feel free to try this code :
 
 The **raw experimental results** on **VOT2019LT** and **LaSOT** benchmarks can be found in [Google Drive](https://drive.google.com/drive/folders/1ZsavuH8LwUD4zG-Y7WEfpEmDadNX__mt)
  or [Baidu Drive](https://pan.baidu.com/s/1PUkqNmVwczQAvrw8ZqiQOg) (extraction code: gc9g).
+ 
+**News!!!** The raw results on **[TLP](https://amoudgl.github.io/tlp/)** benchmark can be found in [Baidu Drive](https://pan.baidu.com/s/1ZI-hOBLFXrBbhDnpTlSllQ) (extraction code: 2qz2).
 
 Please cite our paper if you find it useful for your research.
 ```
