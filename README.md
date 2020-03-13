@@ -9,13 +9,8 @@ This is the **python 3.6** version code for the ICCV 2019 paper SPLT[[arxiv]](ht
 - Python 3.6
 - Ubuntu 18.04.2 LTS
 
-The F-score on VOT18-LT35 of this code is 0.610, which is slightly lower than that of origin branch(0.616). However, performance on a few
-videos is actually better than original version. So feel free to try this code :) 
-
-The **raw experimental results** on **VOT2019LT** and **LaSOT** benchmarks can be found in [Google Drive](https://drive.google.com/drive/folders/1ZsavuH8LwUD4zG-Y7WEfpEmDadNX__mt)
- or [Baidu Drive](https://pan.baidu.com/s/1PUkqNmVwczQAvrw8ZqiQOg) (extraction code: gc9g).
- 
-**News!!!** The raw results on **[TLP](https://amoudgl.github.io/tlp/)** benchmark can be found in [Baidu Drive](https://pan.baidu.com/s/1ZI-hOBLFXrBbhDnpTlSllQ) (extraction code: 2qz2).
+The F-score on VOT18-LT35 of this code is 0.610, which is slightly lower than that of origin branch(0.616). 
+However, performance on some videos is actually better than original version. So feel free to try this code :) 
 
 Please cite our paper if you find it useful for your research.
 ```
@@ -26,6 +21,12 @@ Please cite our paper if you find it useful for your research.
     year={2019}
 }
 ```
+## Raw Results
+The raw experimental results on **VOT2019LT** and **LaSOT** benchmarks can be found in [Google Drive](https://drive.google.com/drive/folders/1ZsavuH8LwUD4zG-Y7WEfpEmDadNX__mt)
+ or [Baidu Drive](https://pan.baidu.com/s/1PUkqNmVwczQAvrw8ZqiQOg) (extraction code: gc9g).
+ 
+The raw experimental results on **[TLP](https://amoudgl.github.io/tlp/)** benchmark can be found in [Baidu Drive](https://pan.baidu.com/s/1ZI-hOBLFXrBbhDnpTlSllQ) (extraction code: 2qz2).
+
 
 ## Installation
 
